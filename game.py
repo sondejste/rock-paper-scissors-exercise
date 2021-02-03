@@ -8,6 +8,8 @@ import random
 #could also only import the function we need from the random module, in this case "random.choice"
 
 
+#add user input for username/name
+
 print ("-------------------")
 print ("Welcome 'Player One' to my Rock-Paper-Scissors game...")
 print ("-------------------")
@@ -17,7 +19,6 @@ print ("-------------------")
 #
 
 user_choice = input("Please choose either 'rock', 'paper', or 'scissors': ")
-
 
 print (f"You chose: {user_choice}")
 
@@ -31,16 +32,28 @@ print (f"You chose: {user_choice}")
 
 print ("-------------------")
 
-foo = ['rock', 'paper', 'scissors']
 
-computer_choice = random.choice(foo)
+#need to validatue user selection
+#stop the program (prior to determining winner) and if the user choice is invalid, end the program
+
+
+options = ["rock", "paper", "scissors"]
+
+user_choice.lower()
+
+if user_choice in options:
+    print("Great Choice!")
+else:
+    print("Sorry, you need to choose an option from the list and try again.")
+    exit()
+
+
+computer_choice = random.choice(options)
 
 print(f"The computer chose: {computer_choice}")
 
 
 print ("-------------------")
-
-
 #determining who won
 if computer_choice == user_choice: 
         print("It's a tie!")
