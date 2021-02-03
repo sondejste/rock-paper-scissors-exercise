@@ -5,7 +5,7 @@
 
 import random
 #makes the random module and all of its parts accessible to us
-
+#could also only import the function we need from the random module, in this case "random.choice"
 
 
 print ("-------------------")
@@ -40,12 +40,28 @@ print(f"The computer chose: {computer_choice}")
 
 print ("-------------------")
 
-exit()
-
 
 #determining who won
+if computer_choice == user_choice: 
+        print("It's a tie!")
+    #double "==" is used because a single "=" is used to set variables equal to values. The double "==" needs to be used for equality operations/checking (think "is whats on the left, the same as whats on the right?")
 
-print ("Oh, the computer won. It's ok.")
+#the elif function is the same as elseif in other programs. This method is one of several correct options. Others include nested if statements.
+elif user_choice == "paper" and computer_choice == "rock":
+        print("You win! Congrats")
+elif user_choice == "paper" and computer_choice == "scissors":
+        print("Oh! The computer won, that's ok!")
+elif user_choice == "rock" and computer_choice == "paper":
+        print("Oh! The computer won, that's ok!")
+elif user_choice == "rock" and computer_choice == "scissors":
+        print("You win! Congrats")
+elif user_choice == "scissors" and computer_choice == "paper":
+        print("You win! Congrats")
+elif user_choice == "scissors" and computer_choice == "rock":
+        print("Oh! The computer won, that's ok!")
+
+    #the "and" operator creates contingencies
+
 
 print ("-------------------")
 
