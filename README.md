@@ -16,7 +16,7 @@ Fork this remote repository (https://github.com/sondejste/rock-paper-scissors-ex
 Then navigate there from the command line (subsequent commands assume you are running them from the local repository's root directory):
 
 ```sh
-cd rock-paper-scissors-game
+cd rock-paper-scissors-exercise
 ```
 
 Use Anaconda to create and activate a new virtual environment, perhaps called "my-first-game":
