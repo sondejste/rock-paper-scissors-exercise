@@ -12,8 +12,9 @@ import os
 #creating a username
 load_dotenv()
 
-username = os.getenv(username, default="Player One") 
-print(f"Welcome {username}")
+User_Name = os.getenv("User_Name", default="Player One") 
+
+print(f"Welcome {User_Name}")
 
 exit()
 
