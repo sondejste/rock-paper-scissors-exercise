@@ -11,7 +11,7 @@ An automated user vs. system rock-paper-scissors game.
 
 ## Installation
 
-Fork this [remote repository](https://github.com/sondejste/my-first-python-app) under your own control, then "clone" or download your remote copy onto your local computer.
+Fork this remote repository (https://github.com/sondejste/my-first-python-app) under your own control, then "clone" or download your remote copy onto your local computer.
 
 Then navigate there from the command line (subsequent commands assume you are running them from the local repository's root directory):
 
