@@ -4,24 +4,23 @@ import random
 #makes the random module and all of its parts accessible to us
 #could also only import the function we need from the random module, in this case "random.choice"
 
-
+#import dotenv
 from dotenv import load_dotenv
 
 import os
 
 #creating a username
+
 load_dotenv()
 
-User_Name = os.getenv("User_Name", default="Player One") 
+USER_NAME = os.getenv("USER_NAME", default="Player One") 
 
-print(f"Welcome {User_Name}")
-
-exit()
+print(f"Welcome '{USER_NAME}'")
 
 
 #beginning gameplay
 
-#print ("-------------------")
+print ("-------------------")
 #print ("Welcome 'Player One' to my Rock-Paper-Scissors game...")
 #print ("-------------------")
 
@@ -30,6 +29,7 @@ exit()
 user_choice = input("Please choose either 'rock', 'paper', or 'scissors': ")
 
 #user_choice.lower() makes the string all lowercase
+print ("-------------------")
 
 print (f"You chose: {user_choice.lower()}")
 
