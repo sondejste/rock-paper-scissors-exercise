@@ -4,33 +4,25 @@ import random
 #makes the random module and all of its parts accessible to us
 #could also only import the function we need from the random module, in this case "random.choice"
 
-import dotenv
-dotenv.load_dotenv()
-#loads the dotenv module
-#add user input for username/name
+
+from dotenv import load_dotenv
+
+import os
 
 #creating a username
+load_dotenv()
 
+username = os.getenv(username, default="Player One") 
+print(f"Welcome {username}")
 
-
-
-
-
-
-
-
-
-
-
-
+exit()
 
 
 #beginning gameplay
 
-print ("-------------------")
-print ("Welcome 'Player One' to my Rock-Paper-Scissors game...")
-print ("-------------------")
-
+#print ("-------------------")
+#print ("Welcome 'Player One' to my Rock-Paper-Scissors game...")
+#print ("-------------------")
 
 #asking user for input
 
